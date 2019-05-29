@@ -4,7 +4,7 @@ Small collection of GIT hooks to make life easier (or more interesting)
 
 ## DO-NOT-COMMIT
 
-Here is the snippet for a git pre-commit hook to avoid accidental commits of private/debug changes (from [hooks/pre-commit](hooks/pre-commit))
+Here is the snippet for a [git pre-commit hook](https://githooks.com/) to avoid accidental commits of private/debug changes (from [hooks/pre-commit](hooks/pre-commit))
 
     DONOTCOMMIT_COUNT=`git diff --cached $against | grep '^\+' | grep 'DO NOT COMMIT' | wc -l`
 
