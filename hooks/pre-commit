@@ -48,7 +48,6 @@ fi
 
 
 DONOTCOMMIT_COUNT=`git diff --cached $against | grep '^\+' | grep 'DO NOT COMMIT' | wc -l`
-echo $DONOTCOMMIT_COUNT
 
 if [ "$DONOTCOMMIT_COUNT" != "0" ]; then
 	echo "Commit aborted - found 'DO NOT COMMIT' tag"
